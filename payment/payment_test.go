@@ -17,20 +17,6 @@ func TestSignUp(t *testing.T) {
 			Password: "56789",
 		},
 	  }
-	// var argument = User{
-	// 	ID: 1,
-	// 	Name: "Frank",
-	// 	Email: "example.com",
-	// 	Password: "12345",
-	// }
-
-	// result := SignUp(&argument)
-
-	// if result.Status != "Success" {
-	// 	t.Errorf("FAILED. expected %s got %s\n", "Success", result)
-	// } else {
-	// 	t.Logf("PASSED. expected %s got %s\n", "Success", result)
-	// }
 
 	for _, test := range tests {
 		result := SignUp(&test)
